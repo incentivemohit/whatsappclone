@@ -1,7 +1,7 @@
 import React from "react";
 import { Image } from "react-native";
 
-export default function ImageComponent({w,h}) {
+export default function ImageComponent({w,h,photo}) {
   return (
     <>
       <Image
@@ -11,7 +11,7 @@ export default function ImageComponent({w,h}) {
           
         }}
         className="rounded-full"
-        source={require("../assets/images/mkk.jpg")}
+        source={{uri:photo}}
       />
     </>
   );
